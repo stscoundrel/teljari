@@ -1,6 +1,6 @@
 const { joinWithConj } = require('../index.js');
 
-describe('Arguments', () => {
+describe('Teljari arguments', () => {
   test('Throws error on missing argument', () => {
     expect(() => {
       joinWithConj()
@@ -23,5 +23,28 @@ describe('Arguments', () => {
     expect(() => {
       joinWithConj([1, 2, 3], [])
     }).toThrow('Incorrect argument - second argument should be a string')
+  })
+})
+
+describe('Teljari output', () => {
+  test('Output is correct with array of one item', () => {
+    const input = ['Chasm City']
+    const result = joinWithConj(input)
+
+    expect(result).toBe('Chasm City')
+  })
+
+  test('Output is correct with default argument', () => {
+    const input = ['Revelation Space', 'Redemption Arc', 'Absolution Gap']
+    const result = joinWithConj(input)
+
+    expect(result).toBe('Revelation Space, Redemption Arc and Absolution Gap')
+  })
+
+  test('Output is correct with given conjuntion argument', () => {
+    const input = ['Blue Remembered Earth', 'On The Steel Breeze', 'Poseidons Wake']
+    const result = joinWithConj(input, 'or maybe even')
+
+    expect(result).toBe('Blue Remembered Earth, On The Steel Breeze or maybe even Poseidons Wake')
   })
 })
