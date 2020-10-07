@@ -16,9 +16,9 @@ const { joinWithConj } = require('teljari');
 
 const languages = ['Finnish', 'Swedish', 'Norwegian', 'Danish']
 
-const withAnd     = joinWithConj(array, 'and') 
-const withOr      = joinWithConj(array, 'or') 
-const withOrWorse = joinWithConj(array, 'or worse,' ) 
+const withAnd     = joinWithConj(languages, 'and') 
+const withOr      = joinWithConj(languages, 'or') 
+const withOrWorse = joinWithConj(languages, 'or worse,' ) 
 
 console.log(withAnd) // Finnish, Swedish, Norwegian and Danish
 console.log(withOr) // Finnish, Swedish, Norwegian or Danish
