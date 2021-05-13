@@ -1,6 +1,6 @@
 {
   "name": "teljari",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "Print arrays with commas and conjunctions for human consumption",
   "main": "index.js",
   "repository": "https://github.com/stscoundrel/teljari.git",
