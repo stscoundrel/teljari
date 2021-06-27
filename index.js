@@ -1,3 +1,3 @@
-const src = require('./src/teljari.js')
+const src = require('./src/teljari')
 
 module.exports = src
