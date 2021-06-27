@@ -1,4 +1,4 @@
-const { joinWithConj } = require('../index.js');
+const { joinWithConj } = require('../index');
 
 describe('Teljari arguments', () => {
   test('Throws error on missing argument', () => {
